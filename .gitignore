@@ -1,4 +1,7 @@
 # Xcode
+# eslint cache
+.eslintcache
+/node_modules
 !**/*.xcodeproj
 !**/*.pbxproj
 !**/*.xcworkspacedata
@@ -21,7 +24,8 @@ DerivedData
 *.xcuserstate
 project.xcworkspace
 **/.xcode.env.local
-
+/ios/build/
+/ios/pods/
 # Gradle
 /build/
 /packages/react-native-gradle-plugin/build/
