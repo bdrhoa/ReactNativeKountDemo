@@ -57,4 +57,6 @@ target 'ReactNativeKountDemo' do
     )
     __apply_Xcode_12_5_M1_post_install_workaround(installer)
   end
+  source 'https://github.com/Kount/kount-pod-spec.git'
+  pod 'Kount', '4.1.9'
 end
