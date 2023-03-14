@@ -25,7 +25,7 @@ DerivedData
 project.xcworkspace
 **/.xcode.env.local
 /ios/build/
-/iOS/pods/
+/ios/pods/
 # Gradle
 /build/
 /packages/react-native-gradle-plugin/build/
