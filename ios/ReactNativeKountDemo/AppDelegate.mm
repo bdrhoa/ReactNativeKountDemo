@@ -10,7 +10,7 @@
   // You can add your custom initial props in the dictionary below.
   // They will be passed down to the ViewController used by React Native.
   self.initialProps = @{};
-
+  
   return [super application:application didFinishLaunchingWithOptions:launchOptions];
 }
 
@@ -31,6 +31,12 @@
 - (BOOL)concurrentRootEnabled
 {
   return true;
+}
+
+//function added manually per https://developer.kount.com/hc/en-us/articles/4411084422420 for iOS 12
+- (void)applicationDidEnterBackground:(UIApplication *)application {
+  KountAnalyticsViewController *backgroundTaskObject = [[KountAnalyticsViewController alloc] init];
+    [backgroundTaskObject registerBackgroundTask];
 }
 
 @end
