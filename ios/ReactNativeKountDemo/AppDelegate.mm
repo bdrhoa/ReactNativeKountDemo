@@ -11,9 +11,9 @@
     self.initialProps = @{};
     
     // Configure and collect data using the Kount SDK
-    NSString *sessionID = @"2089899661";
+    NSString *sessionID = @"123456";
     [[KDataCollector sharedCollector] setDebug:YES];
-    [[KDataCollector sharedCollector] setMerchantID:900100];
+    [[KDataCollector sharedCollector] setMerchantID:999999];
     [[KDataCollector sharedCollector] setLocationCollectorConfig:KLocationCollectorConfigRequestPermission];
     [[KDataCollector sharedCollector] setEnvironment:KEnvironmentTest];
     [[KountAnalyticsViewController sharedInstance] setEnvironmentForAnalytics:[KDataCollector sharedCollector].environment];
